@@ -1,8 +1,11 @@
+<?php
+require "includes/config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Блог IT_Минималиста!</title>
+    <title><?php echo $config['title']; ?></title>
 
     <!-- Bootstrap Grid -->
     <link rel="stylesheet" type="text/css" href="media/assets/bootstrap-grid-only/css/grid12.css">
@@ -22,13 +25,13 @@
         <div class="header__top">
             <div class="container">
                 <div class="header__top__logo">
-                    <h1>Блог IT_Минималиста</h1>
+                    <h1><?php echo $config['title']; ?></h1>
                 </div>
                 <nav class="header__top__menu">
                     <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Я Вконтакте</a></li>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="pages/about_me.php">Обо мне</a></li>
+                        <li><a href="http://vk.com/sombody"target="_blank">Я Вконтакте</a></li>
                     </ul>
                 </nav>
             </div>
@@ -360,7 +363,7 @@
     <footer id="footer">
         <div class="container">
             <div class="footer__logo">
-                <h1>Блог IT_Минималиста</h1>
+                <h1><?php echo $config['title']; ?></h1>
             </div>
             <nav class="footer__menu">
                 <ul>
